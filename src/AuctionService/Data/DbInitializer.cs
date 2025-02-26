@@ -19,11 +19,7 @@ public class DbInitializer
     {
         context.Database.Migrate();
 
-        if (context.Auctions.Any())
-        {
-            Console.WriteLine("Already have data - no seeding required");
-            return;
-        }
+        if (context.Auctions.Any()) return;
 
         var auctions = new List<Auction>()
         {
