@@ -14,7 +14,7 @@ namespace AuctionService.Entities
         public required string ImageUrl { get; set; }
 
         // nav properties
-        public Auction Auction { get; set; } = null!;
+        public Auction Auction { get; set; }
         public Guid AuctionId { get; set; }
     }
 }
